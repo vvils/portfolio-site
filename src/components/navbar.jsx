@@ -67,23 +67,53 @@ const Navbar = () => {
       </div>
       {/* icons */}
       <div className="hidden w-1/3 gap-4 md:flex md:justify-center">
-        <Link href={"/"}>
-          <Image src={"/github.png"} alt="" width={24} height={24} />
+        <Link href={"https://www.linkedin.com/in/wilsweng/"}>
+          <Image
+            src={"/portfolio-site/github.png"}
+            alt=""
+            width={24}
+            height={24}
+          />
+        </Link>
+        {/* <Link href={"/"}>
+          <Image
+            src={"/portfolio-site/dribbble.png"}
+            alt=""
+            width={24}
+            height={24}
+          />
         </Link>
         <Link href={"/"}>
-          <Image src={"/dribbble.png"} alt="" width={24} height={24} />
+          <Image
+            src={"/portfolio-site/instagram.png"}
+            alt=""
+            width={24}
+            height={24}
+          />
         </Link>
         <Link href={"/"}>
-          <Image src={"/instagram.png"} alt="" width={24} height={24} />
+          <Image
+            src={"/portfolio-site/facebook.png"}
+            alt=""
+            width={24}
+            height={24}
+          />
         </Link>
         <Link href={"/"}>
-          <Image src={"/facebook.png"} alt="" width={24} height={24} />
-        </Link>
-        <Link href={"/"}>
-          <Image src={"/pinterest.png"} alt="" width={24} height={24} />
-        </Link>
-        <Link href={"/"}>
-          <Image src={"/linkedin.png"} alt="" width={24} height={24} />
+          <Image
+            src={"/portfolio-site/pinterest.png"}
+            alt=""
+            width={24}
+            height={24}
+          />
+        </Link> */}
+        <Link href={"https://github.com/vvils?tab=repositories"}>
+          <Image
+            src={"/portfolio-site/linkedin.png"}
+            alt=""
+            width={24}
+            height={24}
+          />
         </Link>
       </div>
 

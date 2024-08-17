@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 const Homepage = () => {
   return (
     <motion.div
@@ -13,7 +14,7 @@ const Homepage = () => {
         {/* img */}
         <div className="relative h-1/2 lg:h-full lg:w-1/2">
           <Image
-            src={"/portfolio-site/hero.png"}
+            src={"/portfolio-site/hero2.png"}
             alt=""
             fill
             className="object-contain"
@@ -24,22 +25,22 @@ const Homepage = () => {
         <div className="flex flex-col items-center justify-center gap-8 h-1/2 lg:h-full lg:w-1/2">
           {/* title */}
           <h1 className="text-4xl font-bold md:text-6xl">
-            Title Title Title Title Title Title
+            Building Seamless Web Experiences from Front to Back
           </h1>
           {/* desc */}
           <p className="md:text-xl">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error,
-            maiores. Ipsam, reiciendis consectetur. Quas possimus natus
-            perferendis qui magni voluptatem dolorem saepe ex repellat doloribus
-            sunt, quisquam iste unde rerum.
+            Welcome to my portfolio! Here, you will find a showcase of my work
+            as a full stack developer, where creativity meets code. Explore my
+            projects and see how I transform ideas into dynamic, user-friendly
+            digital experiences.
           </p>
           {/* buttons */}
           <div className="flex w-full gap-4">
             <button className="p-4 text-white bg-black rounded-lg ring-1 ring-black ">
-              View My Work
+              <Link href="/portfolio">View My Work</Link>
             </button>
             <button className="p-4 rounded-lg ring-1 ring-black ">
-              Contact Me
+              <Link href="/contact">Contact Me</Link>
             </button>
           </div>
         </div>

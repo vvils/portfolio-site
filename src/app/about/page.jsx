@@ -24,16 +24,21 @@ const AboutPage = () => {
         <div className="flex flex-col gap-24 p-4 lg:pr-0 lg:w-2/3 xl:w-1/2 md:gap-32 lg:gap-48 xl:gap-64 sm:p-8 md:p-12 lg:p-20 xl:p-48">
           {/* bio */}
           <div className="flex flex-col justify-center gap-12">
-            <h1 className="text-2xl font-bold ">bio</h1>
+            <h1 className="text-2xl font-bold ">BIO</h1>
             <p className="text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-              praesentium ratione ut tempora sed nesciunt tenetur, placeat ipsa
-              vel delectus assumenda hic accusantium eius similique quam
-              corporis expedita! Accusantium, explicabo.
+              Hi! My name is Wilson Weng and I&apos;m a Cornell University
+              undergraduate studying computer science with a strong passion for
+              developing web solutions. My expertise spans from crafting
+              responsive and intuitive user interfaces to building robust and
+              scalable server-side logic. I thrive on solving complex problems
+              and turning innovative ideas into functional, interactive digital
+              solutions. By combining creativity with technical proficiency, I
+              deliver well-rounded applications that are both visually appealing
+              and highly efficient.
             </p>
-            <span className="italic">quote</span>
+            {/* <span className="italic">quote</span> */}
             {/* sig */}
-            <div className="self-end">
+            {/* <div className="self-end">
               <svg
                 width="185"
                 height="77"
@@ -47,7 +52,7 @@ const AboutPage = () => {
                   strokeWidth="2"
                 />
               </svg>
-            </div>
+            </div> */}
             {/* bio scroll svg */}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
@@ -91,19 +96,46 @@ const AboutPage = () => {
                 className="flex flex-wrap gap-4"
               >
                 <div className="p-2 text-white bg-black rounded cursor-pointer hover:bg-white hover:text-black">
-                  Javascript
+                  HTML
+                </div>
+                <div className="p-2 text-white bg-black rounded cursor-pointer hover:bg-white hover:text-black">
+                  CSS
+                </div>
+                <div className="p-2 text-white bg-black rounded cursor-pointer hover:bg-white hover:text-black">
+                  Tailwind CSS
                 </div>
                 <div className="p-2 text-white bg-black rounded cursor-pointer hover:bg-white hover:text-black">
                   Javascript
                 </div>
                 <div className="p-2 text-white bg-black rounded cursor-pointer hover:bg-white hover:text-black">
-                  Javascript
+                  Typescript
                 </div>
                 <div className="p-2 text-white bg-black rounded cursor-pointer hover:bg-white hover:text-black">
-                  Javascript
+                  React
                 </div>
                 <div className="p-2 text-white bg-black rounded cursor-pointer hover:bg-white hover:text-black">
-                  Javascript
+                  Next.js
+                </div>
+                <div className="p-2 text-white bg-black rounded cursor-pointer hover:bg-white hover:text-black">
+                  MongoDB
+                </div>
+                <div className="p-2 text-white bg-black rounded cursor-pointer hover:bg-white hover:text-black">
+                  SQLite
+                </div>
+                <div className="p-2 text-white bg-black rounded cursor-pointer hover:bg-white hover:text-black">
+                  C
+                </div>
+                <div className="p-2 text-white bg-black rounded cursor-pointer hover:bg-white hover:text-black">
+                  C++
+                </div>
+                <div className="p-2 text-white bg-black rounded cursor-pointer hover:bg-white hover:text-black">
+                  Java
+                </div>
+                <div className="p-2 text-white bg-black rounded cursor-pointer hover:bg-white hover:text-black">
+                  Python
+                </div>
+                <div className="p-2 text-white bg-black rounded cursor-pointer hover:bg-white hover:text-black">
+                  OCaml
                 </div>
               </motion.div>
               {/* skills scroll svg */}
@@ -156,7 +188,7 @@ const AboutPage = () => {
                 <div className="flex justify-between h-48">
                   {/* L */}
                   <div className="w-1/3 ">
-                    <div className="p-3 font-semibold bg-white rounded-b-lg rounded-s-lg">
+                    {/* <div className="p-3 font-semibold bg-white rounded-b-lg rounded-s-lg">
                       JOB1
                     </div>
                     <div className="p-3 text-sm italic">JOBDESC</div>
@@ -165,62 +197,10 @@ const AboutPage = () => {
                     </div>
                     <div className="p-1 text-sm font-semibold bg-white rounded w-fit">
                       Apple
-                    </div>
+                    </div> */}
                   </div>
                   {/* C */}
                   <div className="flex justify-center w-1/6">
-                    {/* line */}
-                    <div className="relative w-1 h-full bg-gray-600 rounded">
-                      {/* circle */}
-                      <div className="absolute w-5 h-5 bg-white rounded-full ring-4 ring-red-400 -left-2"></div>
-                    </div>
-                  </div>
-                  {/* R */}
-                  <div className="w-1/3"></div>
-                </div>
-                {/* exp li */}
-                <div className="flex justify-between h-48">
-                  {/* L */}
-                  <div className="w-1/3 "></div>
-                  {/* C */}
-                  <div className="flex justify-center w-1/6">
-                    {/* line */}
-                    <div className="relative w-1 h-full bg-gray-600 rounded">
-                      {/* circle */}
-                      <div className="absolute w-5 h-5 bg-white rounded-full ring-4 ring-red-400 -left-2"></div>
-                    </div>
-                  </div>
-                  {/* R */}
-                  <div className="w-1/3">
-                    <div className="p-3 font-semibold bg-white rounded-b-lg rounded-s-lg">
-                      JOB1
-                    </div>
-                    <div className="p-3 text-sm italic">JOBDESC</div>
-                    <div className="p-3 text-sm font-semibold text-red-400">
-                      2024 - Present
-                    </div>
-                    <div className="p-1 text-sm font-semibold bg-white rounded w-fit">
-                      Apple
-                    </div>
-                  </div>
-                </div>
-                {/* exp li */}
-                <div className="flex justify-between h-48">
-                  {/* L */}
-                  <div className="w-1/3 ">
-                    <div className="p-3 font-semibold bg-white rounded-b-lg rounded-s-lg">
-                      JOB1
-                    </div>
-                    <div className="p-3 text-sm italic">JOBDESC</div>
-                    <div className="p-3 text-sm font-semibold text-red-400">
-                      2024 - Present
-                    </div>
-                    <div className="p-1 text-sm font-semibold bg-white rounded w-fit">
-                      Apple
-                    </div>
-                  </div>
-                  {/* C */}
-                  <div className="flex justify-center w-1/6 ">
                     {/* line */}
                     <div className="relative w-1 h-full bg-gray-600 rounded">
                       {/* circle */}
@@ -244,3 +224,30 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+
+// {/* exp li */}
+// <div className="flex justify-between h-48">
+//   {/* L */}
+//   <div className="w-1/3 ">
+//     <div className="p-3 font-semibold bg-white rounded-b-lg rounded-s-lg">
+//       JOB1
+//     </div>
+//     <div className="p-3 text-sm italic">JOBDESC</div>
+//     <div className="p-3 text-sm font-semibold text-red-400">
+//       2024 - Present
+//     </div>
+//     <div className="p-1 text-sm font-semibold bg-white rounded w-fit">
+//       Apple
+//     </div>
+//   </div>
+//   {/* C */}
+//   <div className="flex justify-center w-1/6 ">
+//     {/* line */}
+//     <div className="relative w-1 h-full bg-gray-600 rounded">
+//       {/* circle */}
+//       <div className="absolute w-5 h-5 bg-white rounded-full ring-4 ring-red-400 -left-2"></div>
+//     </div>
+//   </div>
+//   {/* R */}
+//   <div className="w-1/3"></div>
+// </div>
