@@ -79,7 +79,8 @@ const NavButton = ({
           >
             <NavLink
               variants={item}
-              href={"portfolio-site/" + link}
+              // href={"portfolio-site/" + link}
+              href={link}
               target={newTab ? "_blank" : "_self"}
               className="flex items-center justify-center rounded-full text-foreground custom-bg "
               aria-label={label}
