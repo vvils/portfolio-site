@@ -32,6 +32,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: "Create env file"
+        run: |
+          touch .env
+          echo NEXT_PUBLIC_SERVICE_ID=${{ secrets.NEXT_PUBLIC_SERVICE_ID }} > .env
+          echo NEXT_PUBLIC_TEMPLATE_ID=${{ secrets.NEXT_PUBLIC_TEMPLATE_ID }} > .env
+          echo NEXT_PUBLIC_PUBLIC_KEY=${{ secrets.NEXT_PUBLIC_PUBLIC_KEY }} > .env
+          echo NEXT_PUBLIC_GITHUB_STATS_URL=${{ vars.NEXT_PUBLIC_GITHUB_STATS_URL }} > .env
+          echo NEXT_PUBLIC_GITHUB_STREAK_STATS_URL=${{ vars.NEXT_PUBLIC_GITHUB_STREAK_STATS_URL }} > .env
+          cat .env
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -81,8 +90,6 @@ jobs:
           echo NEXT_PUBLIC_PUBLIC_KEY=${{ secrets.NEXT_PUBLIC_PUBLIC_KEY }} > .env
           echo NEXT_PUBLIC_GITHUB_STATS_URL=${{ vars.NEXT_PUBLIC_GITHUB_STATS_URL }} > .env
           echo NEXT_PUBLIC_GITHUB_STREAK_STATS_URL=${{ vars.NEXT_PUBLIC_GITHUB_STREAK_STATS_URL }} > .env
-
-
           cat .env
 
       - name: Build with Next.js
@@ -93,6 +100,15 @@ jobs:
         with:
           path: ./out
 
+      - name: "Create env file"
+        run: |
+          touch .env
+          echo NEXT_PUBLIC_SERVICE_ID=${{ secrets.NEXT_PUBLIC_SERVICE_ID }} > .env
+          echo NEXT_PUBLIC_TEMPLATE_ID=${{ secrets.NEXT_PUBLIC_TEMPLATE_ID }} > .env
+          echo NEXT_PUBLIC_PUBLIC_KEY=${{ secrets.NEXT_PUBLIC_PUBLIC_KEY }} > .env
+          echo NEXT_PUBLIC_GITHUB_STATS_URL=${{ vars.NEXT_PUBLIC_GITHUB_STATS_URL }} > .env
+          echo NEXT_PUBLIC_GITHUB_STREAK_STATS_URL=${{ vars.NEXT_PUBLIC_GITHUB_STREAK_STATS_URL }} > .env
+          cat .env
   # Deployment job
   deploy:
     environment:
