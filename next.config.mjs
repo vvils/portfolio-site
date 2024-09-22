@@ -7,7 +7,6 @@ const nextConfig = {
     loaderFile: "./loader.js",
   },
   output: "export",
-  basePath: "/portfolio-site",
 };
 
 export default nextConfig;
