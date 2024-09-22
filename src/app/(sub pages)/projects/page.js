@@ -28,12 +28,12 @@ export default function Home() {
       <ProjectList projects={projectsData} />
 
       <div className="fixed flex flex-row items-center justify-between w-screen h-screen mx-0 top-16 lg:top-20 -z-10 ">
-        <div className="w-1/2 h-full lg:-translate-x-1/3">
+        <div className="w-1/2 h-full -translate-x-1/3">
           <RenderModel>
             <Staff />
           </RenderModel>
         </div>
-        <div className="w-1/2 h-full lg:translate-x-1/3">
+        <div className="w-1/2 h-full translate-x-1/3">
           <RenderModel>
             <Staff />
           </RenderModel>

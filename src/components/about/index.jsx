@@ -64,7 +64,7 @@ const AboutDetails = () => {
         >
           <img
             className="w-full h-auto"
-            src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/top-langs?username=vvils&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
+            src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/top-langs?username=vvils&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&size_weight=0.5&count_weight=0.5`}
             alt=""
             loading="lazy"
           />
@@ -73,7 +73,7 @@ const AboutDetails = () => {
         <ItemLayout className={"col-span-full md:col-span-8 !p-0"}>
           <img
             className="w-full h-auto"
-            src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api?username=vvils&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
+            src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api?username=vvils&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&show_icons=true&rank_icon=github&include_all_commits=true&hide=contribs`}
             alt=""
             loading="lazy"
           />
