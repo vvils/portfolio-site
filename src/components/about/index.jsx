@@ -1,6 +1,7 @@
 import React from "react";
 import ItemLayout from "./ItemLayout";
 import Link from "next/link";
+import Image from "next/image";
 
 const AboutDetails = () => {
   return (
@@ -36,9 +37,15 @@ const AboutDetails = () => {
         </ItemLayout>
 
         <ItemLayout
-          className={" col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
+          className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
         >
-          <img src="culogo.png" alt="" loading="lazy" />
+          <Image
+            src="culogo.png"
+            alt=""
+            width={0}
+            height={0}
+            className="w-auto "
+          ></Image>
         </ItemLayout>
 
         <ItemLayout
