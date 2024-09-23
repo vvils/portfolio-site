@@ -62,38 +62,43 @@ const AboutDetails = () => {
         <ItemLayout
           className={"col-span-full sm:col-span-6 md:col-span-4 !p-0"}
         >
-          <img
+          <Image
             className="w-full h-auto"
             src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/top-langs?username=vvils&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&size_weight=0.5&count_weight=0.5`}
             alt=""
-            loading="lazy"
+            height={0}
+            width={0}
           />
         </ItemLayout>
 
         <ItemLayout className={"col-span-full md:col-span-8 !p-0"}>
-          <img
+          <Image
             className="w-full h-auto"
             src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api?username=vvils&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&show_icons=true&rank_icon=github&include_all_commits=true&hide=contribs`}
             alt=""
-            loading="lazy"
+            height={0}
+            width={0}
           />
         </ItemLayout>
 
         <ItemLayout className={"col-span-full"}>
-          <img
+          <Image
             className="w-full h-auto"
             src={`https://skillicons.dev/icons?i=html,css,tailwind,js,ts,nodejs,react,nextjs,express,mongodb,mysql,sqlite,py,pytorch,c,cpp,java,ocaml,aws,gcp,bootstrap,d3,threejs,graphql,qt,docker,figma,git,github,vercel,vite,godot,unity,vscode,pycharm,eclipse,windows,linux,ubuntu,latex,md,materialui,postman,powershell`}
             alt=""
             loading="lazy"
+            height={0}
+            width={0}
           />
         </ItemLayout>
 
         <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
-          <img
+          <Image
             className="w-full h-auto"
             src={`${process.env.NEXT_PUBLIC_GITHUB_STREAK_STATS_URL}?user=vvils&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B`}
             alt=""
-            loading="lazy"
+            height={0}
+            width={0}
           />
         </ItemLayout>
 
@@ -103,11 +108,12 @@ const AboutDetails = () => {
             target="_blank"
             className="w-full"
           >
-            <img
+            <Image
               className="w-full h-auto"
               src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/pin/?username=vvils&repo=portfolio-site&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2`}
               alt=""
-              loading="lazy"
+              height={0}
+              width={0}
             />
           </Link>
         </ItemLayout>

@@ -23,7 +23,7 @@ export const projectsData = [
     description:
       "University petition site built using Next.js. Implemented authentication, AI tools (OpenAI, Langchain), and visual statistics (D3.js).",
     date: "Aug 2024 - Present",
-    demoLink: "#",
+    demoLink: "https://unifyte.vercel.app/",
   },
   {
     id: 2,
